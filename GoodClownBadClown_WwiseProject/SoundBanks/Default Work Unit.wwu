@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2C1281EA-9205-424D-819D-DEFC25519932}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{2C1281EA-9205-424D-819D-DEFC25519932}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Master" ID="{1DF353CB-95F5-481E-A4F4-0E6F4A1F590F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Fire_Sound" ID="{A2811528-0A65-4100-904C-C977EE4D0FBE}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Pop" ID="{FC25A323-6282-411E-8CB5-FDB1F33C6802}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Level" ID="{62AEA0C2-60CE-41DE-ACF5-906BB8CF5781}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Final_Horns" ID="{5EC78DAE-AABB-41DE-879C-FC633F9283A9}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Random_Duck" ID="{89508D90-6C18-42BB-978B-B70928C418D0}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Distressed_Duck" ID="{DE7FFD0A-F93D-42F6-BE8E-57E6E499AB99}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Final_Balloon" ID="{E69B29A5-2C8D-4360-8360-3E57614E256F}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Final_Bell" ID="{5935EC37-CA5D-4371-B550-C8515E891A51}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pitched_Random_Play" ID="{4E5C3ECF-B0FE-4478-AAF4-9FF4B37D23C8}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Final_Duck" ID="{77DA6440-B71F-4497-B378-BD983A74684C}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Final_Duck" ID="{D8795469-694D-45D6-9F92-13A0254BD209}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Duck" ID="{0FB99CEC-6F6F-4645-BFCA-98FABE9F27E2}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Random_Target" ID="{ADABC457-71BE-46EB-BB20-3500B0C985F9}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Final_Bell" ID="{C34EA3F9-9686-4729-814F-D7C303500C76}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Farts" ID="{572B1997-D842-47C6-8E85-6735A798C195}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Final_Balloon_01" ID="{7685DBF3-F980-48BB-8238-AB5326214784}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Duck_Swapper" ID="{88723119-6BE0-49BA-A6FE-D8C78E63A0A0}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Balloon" ID="{45F32A3E-82EF-4AF2-A7E0-F5182FD6862E}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Target" ID="{02540F6C-7E68-4BC9-AAB0-B5463DE72E87}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Random_Distressed_Duck" ID="{F9E6525B-EBCC-4C6D-B011-7B5E4105A9E2}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Tannoy_On" ID="{FDAF584D-B076-4D3F-A33D-7A0BD08A99F6}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Random_Greeting" ID="{787D1B39-6BE4-4D7E-B2C4-D6E1D66957B0}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Honk" ID="{38970616-8545-4DFF-ADE0-5832C73D8B1D}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Tannoy_Reverbed" ID="{1D1144F5-30F3-4EF8-9650-BDBBBD9E1B66}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Random_Greeting" ID="{A64A1464-41B5-4F33-9B3B-B7286C3C4809}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

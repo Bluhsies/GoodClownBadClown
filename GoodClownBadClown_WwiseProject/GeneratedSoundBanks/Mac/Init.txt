@@ -1,0 +1,81 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1200566504	CloseDuck			\Default Work Unit\CloseDuck	
+
+State	ID	Name	State Group			Notes
+	748895195	None	CloseDuck			
+	930712164	Off	CloseDuck			
+	1651971902	On	CloseDuck			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	289050377	RTPC_Scorers_High			\Default Work Unit\SideChain\RTPC_Scorers_High	
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	640280894	RTPC_Poop_Low			\Default Work Unit\SideChain\RTPC_Poop_Low	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1855821357	RTPC_Scorers_Low			\Default Work Unit\SideChain\RTPC_Scorers_Low	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	2949163900	RTPC_Poop_High			\Default Work Unit\SideChain\RTPC_Poop_High	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	325653778	Side_Scorers			\Default Work Unit\Master Audio Bus\SideChain\Side_Scorers	
+	332024420	Target_Obj			\Default Work Unit\Master Audio Bus\Objects\Target_Obj	
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+	561204928	Side_Poops			\Default Work Unit\Master Audio Bus\SideChain\Side_Poops	
+	794722165	Pass_Duck_Low			\Default Work Unit\Master Audio Bus\Passthrough\Pass_Duck\Pass_Duck_Low	
+	1044488314	DD_Bus			\Default Work Unit\Master Audio Bus\Ducking\DD_Bus	
+	1654434312	Pass_Fire_High			\Default Work Unit\Master Audio Bus\Passthrough\Pass_Fire\Pass_Fire_Low\Pass_Fire_High	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\Objects	
+	1883033791	SideChain			\Default Work Unit\Master Audio Bus\SideChain	
+	2175160017	Poop_Pre			\Default Work Unit\Master Audio Bus\Objects\Poop_Obj\Poop_Pre	
+	2181382990	Pass_Duck			\Default Work Unit\Master Audio Bus\Passthrough\Pass_Duck	
+	2473655501	Poop_Obj			\Default Work Unit\Master Audio Bus\Objects\Poop_Obj	
+	2712164154	Ducking			\Default Work Unit\Master Audio Bus\Ducking	
+	2804736953	Passthrough			\Default Work Unit\Master Audio Bus\Passthrough	
+	2870235153	Pass_Duck_High			\Default Work Unit\Master Audio Bus\Passthrough\Pass_Duck\Pass_Duck_Low\Pass_Duck_High	
+	3161908922	Main			\Default Work Unit\Master Audio Bus\Main	
+	3314319729	Pass_Fire			\Default Work Unit\Master Audio Bus\Passthrough\Pass_Fire	
+	3574202736	ND_Bus			\Default Work Unit\Master Audio Bus\Ducking\ND_Bus	
+	3801212178	Pass_Fire_Low			\Default Work Unit\Master Audio Bus\Passthrough\Pass_Fire\Pass_Fire_Low	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4260296736	Target_Pre			\Default Work Unit\Master Audio Bus\Objects\Target_Obj\Target_Pre	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	470848594	Side_Scorers_Full			\Default Work Unit\Master Audio Bus\SideChain\Side_Scorers\Side_Scorers_Full	
+	652135267	Side_Poops_Low			\Default Work Unit\Master Audio Bus\SideChain\Side_Poops\Side_Poops_Low	
+	946111543	Side_Poops_High			\Default Work Unit\Master Audio Bus\SideChain\Side_Poops\Side_Poops_High	
+	2267226089	Side_Scorers_Low			\Default Work Unit\Master Audio Bus\SideChain\Side_Scorers\Side_Scorers_Low	
+	3401835852	Side_Poops_Full			\Default Work Unit\Master Audio Bus\SideChain\Side_Poops\Side_Poops_Full	
+	3923769827	Room_Bus			\Default Work Unit\Master Audio Bus\Reverb\Room_Bus	
+	4042189213	Side_Scorers_High			\Default Work Unit\Master Audio Bus\SideChain\Side_Scorers\Side_Scorers_High	
+
+Effect plug-ins	ID	Name	Type				Notes
+	100100600	Meter (Custom)	Wwise Meter			
+	108942284	Meter (Custom)	Wwise Meter			
+	141461478	Meter (Custom)	Wwise Meter			
+	238151103	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	246208469	EQ_Fire_Low	Wwise Parametric EQ			
+	348674097	Meter (Custom)	Wwise Meter			
+	557149884	Meter (Custom)	Wwise Meter			
+	813295313	Meter (Custom)	Wwise Meter			
+	1292184678	EQ_Duck_Low	Wwise Parametric EQ			
+	2473160689	EQ_Fire_High	Wwise Parametric EQ			
+	2509367698	EQ_Scorers_Low	Wwise Parametric EQ			
+	2879635336	EQ_Scorers_High	Wwise Parametric EQ			
+	3741119600	EQ_Poops_Low	Wwise Parametric EQ			
+	3771234788	EQ_Duck_High	Wwise Parametric EQ			
+	3855730502	EQ_Poops_High	Wwise Parametric EQ			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

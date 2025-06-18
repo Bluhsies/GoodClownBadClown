@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{40B12A1F-0EF3-4420-8650-C9FC8B0539A9}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{40B12A1F-0EF3-4420-8650-C9FC8B0539A9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Occlusion" ID="{AAA0301D-6B51-47DF-B8AB-D2DB65262898}" ShortID="711785511">
+					<ChildrenList>
+						<GameParameter Name="RTPC_Occlusion_LowPass" ID="{1D487E89-0955-4A56-A0BD-C24DC499ACAF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="1"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="0.4"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="0.4"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_Occlusion_Volume" ID="{935B05BD-E9ED-47DB-B4A2-FD31B3E4CC61}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="1"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="0.4"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="0.4"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SideChain" ID="{E61A7891-B17F-493A-97CF-1BB1B6BCA8C3}" ShortID="461766937">
+					<ChildrenList>
+						<GameParameter Name="RTPC_Scorers_Full" ID="{E62E18F3-6452-4D62-ABC5-98816D45556C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_Scorers_Low" ID="{FB9C3571-A648-482B-8649-F16A1A15F548}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_Scorers_High" ID="{40F519D4-D449-4BAD-A806-D76585B490A6}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_Poop_Full" ID="{B686C4DF-516F-4A63-A195-0D30F4E608F6}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_Poop_Low" ID="{AE735169-41DD-4D8C-AB39-911D96836885}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_Poop_High" ID="{3B562D07-4D2D-416D-8EB2-50C240FA1224}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

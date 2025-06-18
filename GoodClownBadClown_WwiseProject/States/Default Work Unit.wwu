@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{43626616-57AC-4EC3-BC10-BC0F00CDC391}" SchemaVersion="110">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{43626616-57AC-4EC3-BC10-BC0F00CDC391}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="CloseDuck" ID="{9555099C-6BE8-4F80-B6D3-DD7098D20FB6}">
+					<ChildrenList>
+						<State Name="None" ID="{01AC4280-5D2D-4917-961B-C14862BF0AB6}"/>
+						<State Name="Off" ID="{D2EEF5D5-AE10-418A-A7B8-C8A1B21F8D0C}"/>
+						<State Name="On" ID="{8A642626-00D4-4563-9991-2133135FF415}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

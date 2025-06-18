@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2023-11-22T10:57:24Z</created>
+    <modified>2023-11-22T10:57:24Z</modified>
+    <revision>1.0</revision>
+  </asset>
+  <library_images>
+    <image id="ClownNose-diffuse-tex" name="ClownNose-diffuse-tex">
+      <init_from>ClownNose_diffuse.png</init_from>
+    </image>
+    <image id="ClownNose-emissive-tex" name="ClownNose-emissive-tex">
+      <init_from>ClownNose_emissive.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="ClownNose-Effect">
+      <profile_COMMON>
+        <newparam sid="ClownNose-diffuse-surface">
+          <surface type="2D">
+            <init_from>ClownNose-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="ClownNose-emissive-surface">
+          <surface type="2D">
+            <init_from>ClownNose-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="ClownNose-diffuse-sampler">
+          <sampler2D>
+            <source>ClownNose-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ClownNose-emissive-sampler">
+          <sampler2D>
+            <source>ClownNose-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="ClownNose-tex-bind" texture="ClownNose-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="ClownNose-tex-bind" texture="ClownNose-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ClownNose-Material">
+      <instance_effect url="#ClownNose-Effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ClownNose-Geom" name="ClownNose-Geom">
+      <mesh>
+        <source id="ClownNose-Pos">
+          <float_array count="72" id="ClownNose-Pos-array">-0.99999976 -12.0 0.0 -0.99999976 -10.0 0.0 -0.99999976 -10.0 -3.0 -0.99999976 -12.0 -3.0 1.0000005 -12.0 -3.0 1.0000005 -10.0 -3.0 1.0000005 -10.0 0.0 1.0000005 -12.0 0.0 -0.99999976 -12.0 -3.0 1.0000005 -12.0 -3.0 1.0000005 -12.0 0.0 -0.99999976 -12.0 0.0 -0.99999976 -10.0 0.0 1.0000005 -10.0 0.0 1.0000005 -10.0 -3.0 -0.99999976 -10.0 -3.0 -0.99999976 -10.0 -3.0 1.0000005 -10.0 -3.0 1.0000005 -12.0 -3.0 -0.99999976 -12.0 -3.0 -0.99999976 -12.0 0.0 1.0000005 -12.0 0.0 1.0000005 -10.0 0.0 -0.99999976 -10.0 0.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#ClownNose-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ClownNose-UV">
+          <float_array count="48" id="ClownNose-UV-array">0.0 0.90625 0.0625 0.90625 0.0625 1.0 0.0 1.0 0.0 1.0 0.0625 1.0 0.0625 0.90625 0.0 0.90625 0.0 1.0 0.0625 1.0 0.0625 0.90625 0.0 0.90625 0.0 0.90625 0.0625 0.90625 0.0625 1.0 0.0 1.0 0.0 0.9375 0.0625 0.9375 0.0625 1.0 0.0 1.0 0.0 1.0 0.0625 1.0 0.0625 0.9375 0.0 0.9375 </float_array>
+          <technique_common>
+            <accessor count="24" source="#ClownNose-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ClownNose-Normal">
+          <float_array count="18" id="ClownNose-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#ClownNose-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ClownNose-Vertices">
+          <input semantic="POSITION" source="#ClownNose-Pos"/>
+        </vertices>
+        <polylist count="6" material="ClownNose-Material">
+          <input offset="0" semantic="VERTEX" source="#ClownNose-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#ClownNose-UV"/>
+          <input offset="2" semantic="NORMAL" source="#ClownNose-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_animations/>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="ClownNose" name="ClownNose">
+        <translate>0 0 0</translate>
+        <rotate>0 0 1 0</rotate>
+        <rotate>0 1 0 0</rotate>
+        <rotate>1 0 0 0</rotate>
+        <scale>1 1 1</scale>
+        <instance_geometry url="#ClownNose-Geom">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ClownNose-Material" target="#ClownNose-Material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="ClownNose-tex-bind"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>

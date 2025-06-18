@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DA8A05DE-C42B-4D72-BC4E-5C4E08DD541F}" SchemaVersion="110">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{DA8A05DE-C42B-4D72-BC4E-5C4E08DD541F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="SoundCaster1" ID="{6BE3E61E-3ABA-4C58-B2F1-ED3B5810F636}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Final_Balloon" ID="{D71A5F85-C3EE-4115-B752-3821497E44D0}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Final_Duck" ID="{EEEA520C-EAF5-4CB8-A994-3A7EE13101AD}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Target1" ID="{B4022205-A82E-40C1-BA13-EB6E36A33219}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Random_Target" ID="{297A84BA-64C8-449E-9568-DBA309EAD955}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Fire_Sound" ID="{7A2749FD-7B16-440B-8871-3A5DEDEB7C8E}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Squeak_01" ID="{4D0416BE-E1B1-4C57-8676-A0F9313F6295}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Random_Pop_01" ID="{3DEAEDBE-2BD2-4B17-9311-41596F1320A1}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}"/>
+							<Position X="0" Y="7"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Random_Farts" ID="{EF1CD565-F3B3-4541-BF51-6AF723B881B1}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="0" Y="8"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Final_Balloon_01" ID="{D6F45FA2-1027-4B2B-B591-6D2ACB2B105D}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Final_Duck_01" ID="{E306C96E-C54A-4E32-B5A5-CF7A9E922687}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Target2" ID="{544CEADF-944F-4198-942A-2FD40FC73301}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Random_Farts" ID="{EF1CD565-F3B3-4541-BF51-6AF723B881B1}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Squeak_2" ID="{88E51AC1-5E84-425D-BB49-0CFE11374FEA}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Random_Farts_01" ID="{4E20C114-EECA-4FF5-8716-CE40282CBE99}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}"/>
+							<Position X="1" Y="7"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Random_Balloon_01" ID="{1E3EE085-0A49-48E8-89D3-7EB219A67F2A}" WorkUnitID="{BDBEB4CA-CBB1-4A4C-8ACF-23B933F6C1F7}"/>
+							<Position X="1" Y="8"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Final_Balloon_02" ID="{FEFB81C2-BD71-4F67-94D2-A24936B9B896}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Final_Duck_02" ID="{2F811F51-56A5-4BB3-85ED-53C4FB73C9E7}" WorkUnitID="{6CC205EE-E825-4542-A3C2-88684F7DFC32}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Poop_High" ID="{3B562D07-4D2D-416D-8EB2-50C240FA1224}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Occlusion_LowPass" ID="{1D487E89-0955-4A56-A0BD-C24DC499ACAF}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Poop_Full" ID="{B686C4DF-516F-4A63-A195-0D30F4E608F6}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Scorers_High" ID="{40F519D4-D449-4BAD-A806-D76585B490A6}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Poop_Low" ID="{AE735169-41DD-4D8C-AB39-911D96836885}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Normal" ID="{8226E36F-D095-4F01-93D6-D6C2894201AB}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

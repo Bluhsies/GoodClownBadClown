@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c5e43240ddced499150a1a681fc862, type: 3}
+  m_Name: 4734BFF2-EC11-43DB-A37A-6EE9693016D9
+  m_EditorClassIdentifier: 
+  objectName: Stressed
+  id: 3309335698
+  guid: 4734BFF2-EC11-43DB-A37A-6EE9693016D9
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 9245ba017d66de444aa53d2789566ef2, type: 2}

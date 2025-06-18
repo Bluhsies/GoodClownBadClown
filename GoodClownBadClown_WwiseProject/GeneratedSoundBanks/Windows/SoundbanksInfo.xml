@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B4DABC1D-D3CC-4819-8990-D7D5F7050096}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="100100600" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="108942284" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="141461478" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="238151103" Name="Wwise_RoomVerb_(Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="348674097" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="557149884" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="813295313" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="246208469" Name="EQ_Fire_Low" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="1292184678" Name="EQ_Duck_Low" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="2473160689" Name="EQ_Fire_High" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="2509367698" Name="EQ_Scorers_Low" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="2879635336" Name="EQ_Scorers_High" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="3741119600" Name="EQ_Poops_Low" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="3771234788" Name="EQ_Duck_High" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="3855730502" Name="EQ_Poops_High" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="325653778" Name="Side_Scorers"/>
+				<Bus Id="332024420" Name="Target_Obj"/>
+				<Bus Id="348963605" Name="Reverb"/>
+				<Bus Id="561204928" Name="Side_Poops"/>
+				<Bus Id="794722165" Name="Pass_Duck_Low">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1292184678"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="1044488314" Name="DD_Bus"/>
+				<Bus Id="1654434312" Name="Pass_Fire_High">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2473160689"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="1695690031" Name="Objects"/>
+				<Bus Id="1883033791" Name="SideChain"/>
+				<Bus Id="2175160017" Name="Poop_Pre">
+					<AuxBusRefs>
+						<AuxBusRef Id="3401835852" Name="Side_Poops_Full"/>
+					</AuxBusRefs>
+				</Bus>
+				<Bus Id="2181382990" Name="Pass_Duck"/>
+				<Bus Id="2473655501" Name="Poop_Obj"/>
+				<Bus Id="2712164154" Name="Ducking"/>
+				<Bus Id="2804736953" Name="Passthrough"/>
+				<Bus Id="2870235153" Name="Pass_Duck_High">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3771234788"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="3161908922" Name="Main"/>
+				<Bus Id="3314319729" Name="Pass_Fire"/>
+				<Bus Id="3574202736" Name="ND_Bus"/>
+				<Bus Id="3801212178" Name="Pass_Fire_Low">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="246208469"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="4260296736" Name="Target_Pre">
+					<AuxBusRefs>
+						<AuxBusRef Id="470848594" Name="Side_Scorers_Full"/>
+					</AuxBusRefs>
+				</Bus>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="470848594" Name="Side_Scorers_Full">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="141461478"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2267226089" Name="Side_Scorers_Low"/>
+						<AuxBusRef Id="4042189213" Name="Side_Scorers_High"/>
+					</AuxBusRefs>
+				</AuxBus>
+				<AuxBus Id="652135267" Name="Side_Poops_Low">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="108942284"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3741119600"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="946111543" Name="Side_Poops_High">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="557149884"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3855730502"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2267226089" Name="Side_Scorers_Low">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="100100600"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="2509367698"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3401835852" Name="Side_Poops_Full">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="813295313"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="652135267" Name="Side_Poops_Low"/>
+						<AuxBusRef Id="946111543" Name="Side_Poops_High"/>
+					</AuxBusRefs>
+				</AuxBus>
+				<AuxBus Id="3923769827" Name="Room_Bus">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="238151103"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="4042189213" Name="Side_Scorers_High">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="348674097"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="2879635336"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="289050377" Name="RTPC_Scorers_High"/>
+				<GameParameter Id="342905355" Name="RTPC_Occlusion_Volume"/>
+				<GameParameter Id="361950326" Name="RTPC_Scorers_Full"/>
+				<GameParameter Id="640280894" Name="RTPC_Poop_Low"/>
+				<GameParameter Id="1565745694" Name="RTPC_Occlusion_LowPass"/>
+				<GameParameter Id="1855821357" Name="RTPC_Scorers_Low"/>
+				<GameParameter Id="2603982447" Name="RTPC_Poop_Full"/>
+				<GameParameter Id="2949163900" Name="RTPC_Poop_High"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1200566504" Name="CloseDuck">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="930712164" Name="Off"/>
+						<State Id="1651971902" Name="On"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="433183545" Name="Quacks">
+					<Switches>
+						<Switch Id="1160234136" Name="Normal"/>
+						<Switch Id="3309335698" Name="Stressed"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{E2ABB54A-857B-BD45-1B04-F0206D0C6A26}">
+			<ShortName>Master</ShortName>
+			<Path>Master.bnk</Path>
+			<Media>
+				<File Id="10712711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pop_1.wav</ShortName>
+					<CachePath>SFX/Pop_1_B12E2279.wem</CachePath>
+				</File>
+				<File Id="57683784" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_13C3AC80.wem</CachePath>
+				</File>
+				<File Id="83702017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_B3AE780D.wem</CachePath>
+				</File>
+				<File Id="194948581" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Bell.wav</ShortName>
+					<CachePath>SFX/Final_Bell_720A6E6E.wem</CachePath>
+				</File>
+				<File Id="211846479" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Greeting1.wav</ShortName>
+					<CachePath>SFX/Greeting1_151868C9.wem</CachePath>
+				</File>
+				<File Id="228158689" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Greeting1.wav</ShortName>
+					<CachePath>SFX/Greeting1_9757D3B0.wem</CachePath>
+				</File>
+				<File Id="250084081" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Horns.wav</ShortName>
+					<CachePath>SFX/Final_Horns_AEEF2230.wem</CachePath>
+				</File>
+				<File Id="280162238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Bell.wav</ShortName>
+					<CachePath>SFX/Final_Bell_C6FA31C4.wem</CachePath>
+				</File>
+				<File Id="284506560" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Greeting2.wav</ShortName>
+					<CachePath>SFX/Greeting2_4DEAB4B9.wem</CachePath>
+				</File>
+				<File Id="295912855" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Greeting1.wav</ShortName>
+					<CachePath>SFX/Greeting1_AD58CCD9.wem</CachePath>
+				</File>
+				<File Id="386346694" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Tannoy_Reverbed.wav</ShortName>
+					<CachePath>SFX/Tannoy_Reverbed_6EF38B57.wem</CachePath>
+				</File>
+				<File Id="421471429" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whoopie_Cushion.wav</ShortName>
+					<CachePath>SFX/Whoopie_Cushion_A1F57628.wem</CachePath>
+				</File>
+				<File Id="433190191" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pop_1.wav</ShortName>
+					<CachePath>SFX/Pop_1_31C1B30F.wem</CachePath>
+				</File>
+				<File Id="448107080" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Duck.wav</ShortName>
+					<CachePath>SFX/Final_Duck_F1F8B68A.wem</CachePath>
+				</File>
+				<File Id="475858338" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_865A141E.wem</CachePath>
+				</File>
+				<File Id="535478819" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Duck.wav</ShortName>
+					<CachePath>SFX/Final_Duck_B930BE7A.wem</CachePath>
+				</File>
+				<File Id="541576894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_E9DE3C47.wem</CachePath>
+				</File>
+				<File Id="557171220" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Duck.wav</ShortName>
+					<CachePath>SFX/Final_Duck_A64ED054.wem</CachePath>
+				</File>
+				<File Id="582665999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Torch_Sound.wav</ShortName>
+					<CachePath>SFX/Torch_Sound_4095FAC0.wem</CachePath>
+				</File>
+				<File Id="611523237" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Tannoy_On.wav</ShortName>
+					<CachePath>SFX/Tannoy_On_F67EAF35.wem</CachePath>
+				</File>
+				<File Id="621108632" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Balloon.wav</ShortName>
+					<CachePath>SFX/Final_Balloon_9F313858.wem</CachePath>
+				</File>
+				<File Id="625068106" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Balloon.wav</ShortName>
+					<CachePath>SFX/Final_Balloon_4529493B.wem</CachePath>
+				</File>
+				<File Id="679182436" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Duck.wav</ShortName>
+					<CachePath>SFX/Final_Duck_87B11BD4.wem</CachePath>
+				</File>
+				<File Id="702577398" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Bell.wav</ShortName>
+					<CachePath>SFX/Final_Bell_68DE9FC1.wem</CachePath>
+				</File>
+				<File Id="708509900" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whoopie_Cushion.wav</ShortName>
+					<CachePath>SFX/Whoopie_Cushion_3ED61A04.wem</CachePath>
+				</File>
+				<File Id="761285153" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Duck.wav</ShortName>
+					<CachePath>SFX/Final_Duck_47825B6E.wem</CachePath>
+				</File>
+				<File Id="775379799" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pop_1.wav</ShortName>
+					<CachePath>SFX/Pop_1_7A284E54.wem</CachePath>
+				</File>
+				<File Id="780053111" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_1E5B41EF.wem</CachePath>
+				</File>
+				<File Id="786251286" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Greeting1.wav</ShortName>
+					<CachePath>SFX/Greeting1_3B53AAD5.wem</CachePath>
+				</File>
+				<File Id="823786604" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_6FDBF619.wem</CachePath>
+				</File>
+				<File Id="852745420" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whoopie_Cushion.wav</ShortName>
+					<CachePath>SFX/Whoopie_Cushion_968C0D37.wem</CachePath>
+				</File>
+				<File Id="853104443" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Greeting2.wav</ShortName>
+					<CachePath>SFX/Greeting2_1F461B21.wem</CachePath>
+				</File>
+				<File Id="890404976" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pop_1.wav</ShortName>
+					<CachePath>SFX/Pop_1_11DD023C.wem</CachePath>
+				</File>
+				<File Id="958240821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Horns.wav</ShortName>
+					<CachePath>SFX/Final_Horns_7388A049.wem</CachePath>
+				</File>
+				<File Id="959953240" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Final_Balloon.wav</ShortName>
+					<CachePath>SFX/Final_Balloon_FD1B64ED.wem</CachePath>
+				</File>
+				<File Id="962815951" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_A85252A1.wem</CachePath>
+				</File>
+				<File Id="1031512431" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pop_1.wav</ShortName>
+					<CachePath>SFX/Pop_1_53348049.wem</CachePath>
+				</File>
+				<File Id="1035460381" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Greeting1.wav</ShortName>
+					<CachePath>SFX/Greeting1_791E20EC.wem</CachePath>
+				</File>
+				<File Id="1071209063" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pop_1.wav</ShortName>
+					<CachePath>SFX/Pop_1_A45A5AD2.wem</CachePath>
+				</File>
+				<File Id="1071653599" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelSelect.wav</ShortName>
+					<CachePath>SFX/LevelSelect_0E1EBFC7.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="53892615" Name="Balloon_EQ" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="948826371" Name="Pitch_Shifter_Less" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="723492182" Name="Play_Duck_Swapper" MaxAttenuation="15" DurationType="OneShot" DurationMin="0.3869533" DurationMax="2.0553606">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="433183545" Id="1160234136" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="535478819"/>
+								<MediaRef Id="557171220"/>
+								<MediaRef Id="761285153"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="433183545" Id="3309335698"/>
+							<MediaRefs>
+								<MediaRef Id="448107080"/>
+								<MediaRef Id="557171220"/>
+								<MediaRef Id="679182436"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="406281678" Name="Play_Final_Balloon" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.50104505" DurationMax="0.50104505">
+					<MediaRefs>
+						<MediaRef Id="625068106"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1264613660" Name="Play_Final_Balloon_01" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.5117056" DurationMax="0.5117056">
+					<MediaRefs>
+						<MediaRef Id="621108632"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1660887386" Name="Play_Final_Bell" MaxAttenuation="15" DurationType="OneShot" DurationMin="0.3131904" DurationMax="0.3131904">
+					<MediaRefs>
+						<MediaRef Id="194948581"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2190624446" Name="Play_Final_Duck" MaxAttenuation="15" DurationType="OneShot" DurationMin="1.1224105" DurationMax="1.1224105">
+					<MediaRefs>
+						<MediaRef Id="535478819"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1981288325" Name="Play_Final_Horns" DurationType="OneShot" DurationMin="0.5253471" DurationMax="0.5253471">
+					<MediaRefs>
+						<MediaRef Id="250084081"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1813085682" Name="Play_Fire_Sound" MaxAttenuation="15" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="582665999"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2945822887" Name="Play_Random_Balloon" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.50104505" DurationMax="0.5117056">
+					<MediaRefs>
+						<MediaRef Id="621108632"/>
+						<MediaRef Id="625068106"/>
+						<MediaRef Id="959953240"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="285164011" Name="Play_Random_Balloon_01" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.50104505" DurationMax="0.5117056">
+					<MediaRefs>
+						<MediaRef Id="621108632"/>
+						<MediaRef Id="625068106"/>
+						<MediaRef Id="959953240"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="53892615"/>
+							<PluginRef Id="948826371"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="270042352" Name="Play_Random_Distressed_Duck" MaxAttenuation="15" DurationType="OneShot" DurationMin="0.3869533" DurationMax="0.82909274">
+					<MediaRefs>
+						<MediaRef Id="448107080"/>
+						<MediaRef Id="557171220"/>
+						<MediaRef Id="679182436"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4129614625" Name="Play_Random_Duck" MaxAttenuation="15" DurationType="OneShot" DurationMin="0.7951604" DurationMax="2.0553606">
+					<MediaRefs>
+						<MediaRef Id="535478819"/>
+						<MediaRef Id="557171220"/>
+						<MediaRef Id="761285153"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4024218666" Name="Play_Random_Farts" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.98416007" DurationMax="1.126681">
+					<MediaRefs>
+						<MediaRef Id="421471429"/>
+						<MediaRef Id="708509900"/>
+						<MediaRef Id="852745420"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3820289000" Name="Play_Random_Farts_01" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.98416007" DurationMax="1.126681">
+					<MediaRefs>
+						<MediaRef Id="421471429"/>
+						<MediaRef Id="708509900"/>
+						<MediaRef Id="852745420"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="948826371"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="1533232227" Name="Play_Random_Greeting" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.9571948" DurationMax="7.4257336">
+					<MediaRefs>
+						<MediaRef Id="211846479"/>
+						<MediaRef Id="228158689"/>
+						<MediaRef Id="284506560"/>
+						<MediaRef Id="295912855"/>
+						<MediaRef Id="786251286"/>
+						<MediaRef Id="853104443"/>
+						<MediaRef Id="1035460381"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3481879412" Name="Play_Random_Honk" DurationType="OneShot" DurationMin="0.5045413" DurationMax="0.5253471">
+					<MediaRefs>
+						<MediaRef Id="250084081"/>
+						<MediaRef Id="958240821"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1603401656" Name="Play_Random_Level" MaxAttenuation="20" DurationType="OneShot" DurationMin="6.088909" DurationMax="21.2062">
+					<MediaRefs>
+						<MediaRef Id="57683784"/>
+						<MediaRef Id="83702017"/>
+						<MediaRef Id="475858338"/>
+						<MediaRef Id="541576894"/>
+						<MediaRef Id="780053111"/>
+						<MediaRef Id="823786604"/>
+						<MediaRef Id="962815951"/>
+						<MediaRef Id="1071653599"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1880099235" Name="Play_Random_Pop" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.08587995" DurationMax="0.19604087">
+					<MediaRefs>
+						<MediaRef Id="10712711"/>
+						<MediaRef Id="433190191"/>
+						<MediaRef Id="775379799"/>
+						<MediaRef Id="890404976"/>
+						<MediaRef Id="1031512431"/>
+						<MediaRef Id="1071209063"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2890990743" Name="Play_Random_Pop_01" MaxAttenuation="25" DurationType="OneShot" DurationMin="0.08587995" DurationMax="0.19604087">
+					<MediaRefs>
+						<MediaRef Id="10712711"/>
+						<MediaRef Id="433190191"/>
+						<MediaRef Id="775379799"/>
+						<MediaRef Id="890404976"/>
+						<MediaRef Id="1031512431"/>
+						<MediaRef Id="1071209063"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="948826371"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="2260914217" Name="Play_Random_Target" MaxAttenuation="15" DurationType="OneShot" DurationMin="0.28312364" DurationMax="0.3736447">
+					<MediaRefs>
+						<MediaRef Id="194948581"/>
+						<MediaRef Id="280162238"/>
+						<MediaRef Id="702577398"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1668555701" Name="Play_Tannoy_On" MaxAttenuation="20" DurationType="OneShot" DurationMin="3.2226336" DurationMax="3.2226336">
+					<MediaRefs>
+						<MediaRef Id="611523237"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3568384201" Name="Play_Tannoy_Reverbed" MaxAttenuation="20" DurationType="OneShot" DurationMin="3.0708222" DurationMax="3.0708222">
+					<MediaRefs>
+						<MediaRef Id="386346694"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3443401776" Name="Stop_Final_Bell" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="650256992" Name="Stop_Final_Duck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3360668650" Name="Stop_Random_Distressed_Duck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1792611331" Name="Stop_Random_Duck" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1624968805" Name="Stop_Random_Greeting" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1165255667" Name="Stop_Random_Target" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="342905355" Name="RTPC_Occlusion_Volume"/>
+				<GameParameter Id="1565745694" Name="RTPC_Occlusion_LowPass"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="433183545" Name="Quacks">
+					<Switches>
+						<Switch Id="1160234136" Name="Normal"/>
+						<Switch Id="3309335698" Name="Stressed"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{6DF22902-2D65-B4D7-73CA-5B385980829C}</FileHash>
+</SoundBanksInfo>

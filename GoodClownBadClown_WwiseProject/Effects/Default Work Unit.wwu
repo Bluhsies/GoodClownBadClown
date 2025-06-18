@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{433E206C-EDEA-493C-BD8B-23865D25DB26}" SchemaVersion="110">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{433E206C-EDEA-493C-BD8B-23865D25DB26}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Balloon_Pitch_Shifter" ID="{3950CDBB-A0DD-49CC-AB5D-5EB45569D5A6}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayTime" Type="Real32" Value="30"/>
+						<Property Name="Input" Type="int32" Value="2"/>
+						<Property Name="Pitch" Type="Real32" Value="-1200"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Balloon_Compressor" ID="{C93B10F3-2D50-4FA4-BD5F-EC733B797E1A}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="2"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Balloon_EQ" ID="{7F5CEB5F-FD11-4257-A10D-6274AF65E064}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="2000"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="5000"/>
+						<Property Name="OnOffBand1" Type="bool" Value="False"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Clown_Verb" ID="{9ADF6ADD-1046-460D-9B3D-5E759EE22231}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DecayTime" Type="Real32" Value="1.3"/>
+						<Property Name="Density" Type="Real32" Value="25"/>
+						<Property Name="HFDamping" Type="Real32" Value="2"/>
+						<Property Name="PreDelay" Type="Real32" Value="15"/>
+						<Property Name="RoomShape" Type="Real32" Value="20"/>
+						<Property Name="RoomSize" Type="Real32" Value="5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="EQ_Scorers_Low" ID="{898009E4-90E4-4CA5-A805-7E76A251CD34}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="300"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="EQ_Scorers_High" ID="{1104D07B-DFBF-4EEE-AA24-73CCA8745673}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="10000"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="EQ_Duck_Low" ID="{73387228-F72B-4EC4-8BBF-DD28A6888C1F}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="350"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{C011E683-D2B3-43EE-B7C3-40B444F47210}" ShortID="432680392">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="GainBand1"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_Scorers_Low" ID="{FB9C3571-A648-482B-8649-F16A1A15F548}" WorkUnitID="{40B12A1F-0EF3-4420-8650-C9FC8B0539A9}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{58B4AA3E-13B2-4BBC-AB21-B4E1C490098F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-48</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+				<Effect Name="EQ_Duck_High" ID="{2B71D0AE-CBA9-4119-A3D3-D599F2CDFD9B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand3" Type="Real32" Value="10050"/>
+						<Property Name="OnOffBand1" Type="bool" Value="False"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3A349614-0155-4505-B841-084771B9D106}" ShortID="879578255">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="GainBand3"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_Scorers_High" ID="{40F519D4-D449-4BAD-A806-D76585B490A6}" WorkUnitID="{40B12A1F-0EF3-4420-8650-C9FC8B0539A9}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{FDC99396-038F-4E2E-8E52-4A7B2611075C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-48</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+				<Effect Name="EQ_Poops_Low" ID="{6A213769-D880-4AA9-8665-489E21819B6B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="400"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="EQ_Poops_High" ID="{B6BDA3FF-9231-4871-AA8F-08F5A30330F3}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="8000"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="EQ_Fire_Low" ID="{723EDEEC-B40B-452B-950C-C55D303C571D}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="450"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{B5B2C6F3-3312-4637-9F2A-0755D91BC19C}" ShortID="210440813">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="GainBand1"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_Poop_Low" ID="{AE735169-41DD-4D8C-AB39-911D96836885}" WorkUnitID="{40B12A1F-0EF3-4420-8650-C9FC8B0539A9}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{160C9F97-4379-4429-A616-8BAE046D15E3}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-48</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3A307638-D99B-4055-88CD-1B87A35C3D7E}" ShortID="174973976">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="GainBand1"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_Poop_Low" ID="{AE735169-41DD-4D8C-AB39-911D96836885}" WorkUnitID="{40B12A1F-0EF3-4420-8650-C9FC8B0539A9}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A72DE191-963B-4455-B6B5-4FEC38E61CD1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>-24</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+				<Effect Name="EQ_Fire_High" ID="{74DB1B26-D9ED-4A7F-9905-01B56F727185}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand3" Type="Real32" Value="8500"/>
+						<Property Name="OnOffBand1" Type="bool" Value="False"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{5991401F-F253-4BEA-BED4-BAB86ECCAE6D}" ShortID="13342965">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="GainBand3"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_Poop_High" ID="{3B562D07-4D2D-416D-8EB2-50C240FA1224}" WorkUnitID="{40B12A1F-0EF3-4420-8650-C9FC8B0539A9}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{57DA04F8-091E-48C1-82A2-A45B5A892BE5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-48</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+				<Effect Name="Pitch_Shifter_Less" ID="{4FEB8E3E-9C4A-4155-8C9A-B3033BF51AE8}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<PropertyList>
+						<Property Name="Pitch" Type="Real32" Value="-1200"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

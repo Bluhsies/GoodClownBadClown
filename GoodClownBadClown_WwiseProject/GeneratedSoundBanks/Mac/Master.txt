@@ -1,0 +1,86 @@
+Event	ID	Name			Wwise Object Path	Notes
+	270042352	Play_Random_Distressed_Duck			\Default Work Unit\SFX_Play\Play_Random_Distressed_Duck	
+	285164011	Play_Random_Balloon_01			\Default Work Unit\Pitched_Random_Play\Play_Random_Balloon_01	
+	406281678	Play_Final_Balloon			\Default Work Unit\SFX_Play\Play_Final_Balloon	
+	650256992	Stop_Final_Duck			\Default Work Unit\Stop_Final_Duck	
+	723492182	Play_Duck_Swapper			\Default Work Unit\SFX_Play\Play_Duck_Swapper	
+	1165255667	Stop_Random_Target			\Default Work Unit\Stop_Random_Target	
+	1264613660	Play_Final_Balloon_01			\Default Work Unit\SFX_Play\Play_Final_Balloon_01	
+	1533232227	Play_Random_Greeting			\Default Work Unit\Voice_Play\Play_Random_Greeting	
+	1603401656	Play_Random_Level			\Default Work Unit\Voice_Play\Play_Random_Level	
+	1624968805	Stop_Random_Greeting			\Default Work Unit\Voice_Play\Stop_Random_Greeting	
+	1660887386	Play_Final_Bell			\Default Work Unit\SFX_Play\Play_Final_Bell	
+	1668555701	Play_Tannoy_On			\Default Work Unit\SFX_Play\Play_Tannoy_On	
+	1792611331	Stop_Random_Duck			\Default Work Unit\SFX_Play\Stop_Random_Duck	
+	1813085682	Play_Fire_Sound			\Default Work Unit\SFX_Play\Play_Fire_Sound	
+	1880099235	Play_Random_Pop			\Default Work Unit\SFX_Play\Play_Random_Pop	
+	1981288325	Play_Final_Horns			\Default Work Unit\SFX_Play\Play_Final_Horns	
+	2190624446	Play_Final_Duck			\Default Work Unit\SFX_Play\Play_Final_Duck	
+	2260914217	Play_Random_Target			\Default Work Unit\SFX_Play\Play_Random_Target	
+	2890990743	Play_Random_Pop_01			\Default Work Unit\Pitched_Random_Play\Play_Random_Pop_01	
+	2945822887	Play_Random_Balloon			\Default Work Unit\SFX_Play\Play_Random_Balloon	
+	3360668650	Stop_Random_Distressed_Duck			\Default Work Unit\SFX_Play\Stop_Random_Distressed_Duck	
+	3443401776	Stop_Final_Bell			\Default Work Unit\Stop_Final_Bell	
+	3481879412	Play_Random_Honk			\Default Work Unit\SFX_Play\Play_Random_Honk	
+	3568384201	Play_Tannoy_Reverbed			\Default Work Unit\SFX_Play\Play_Tannoy_Reverbed	
+	3820289000	Play_Random_Farts_01			\Default Work Unit\Pitched_Random_Play\Play_Random_Farts_01	
+	4024218666	Play_Random_Farts			\Default Work Unit\SFX_Play\Play_Random_Farts	
+	4129614625	Play_Random_Duck			\Default Work Unit\SFX_Play\Play_Random_Duck	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	433183545	Quacks			\Default Work Unit\Quacks	
+
+Switch	ID	Name	Switch Group			Notes
+	1160234136	Normal	Quacks			
+	3309335698	Stressed	Quacks			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	342905355	RTPC_Occlusion_Volume			\Default Work Unit\Occlusion\RTPC_Occlusion_Volume	
+	1565745694	RTPC_Occlusion_LowPass			\Default Work Unit\Occlusion\RTPC_Occlusion_LowPass	
+
+Effect plug-ins	ID	Name	Type				Notes
+	53892615	Balloon_EQ	Wwise Parametric EQ			
+	948826371	Pitch_Shifter_Less	Wwise Pitch Shifter			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	10712711	Pop_02	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Pop_1_B12E2279.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Pop_Sounds\Pop_Mixer\Random_Pop\Pop_02		16584
+	57683784	LevelSelect_06	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_13C3AC80.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect_06		2096360
+	83702017	LevelSelect	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_B3AE780D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect		1169168
+	194948581	Final_Bell	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Bell_720A6E6E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Target_Sounds\Random_Target\Final_Bell		63804
+	211846479	Greeting_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Greeting1_151868C9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Greetings\Random_Greeting\Greeting_01		1425836
+	228158689	Greeting	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Greeting1_9757D3B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Greetings\Random_Greeting\Greeting		1273756
+	250084081	Final_Horns	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Horns_AEEF2230.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Honk_Sounds\Reverb_Honk\Reverb_Honk_Mixer\Final_Horns		100964
+	280162238	Final_Bell_02	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Bell_C6FA31C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Target_Sounds\Random_Target\Final_Bell_02		54456
+	284506560	Greeting_06	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Greeting2_4DEAB4B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Greetings\Random_Greeting\Greeting_06		567876
+	295912855	Greeting_03	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Greeting1_AD58CCD9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Greetings\Random_Greeting\Greeting_03		1311776
+	386346694	Tannoy_Reverbed	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Tannoy_Reverbed_6EF38B57.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Tannoy_Sounds\Tannoy_Mixer\Tannoy_Reverbed		1768884
+	421471429	Whoopie_Cushion_02	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Whoopie_Cushion_A1F57628.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Fart_Sounds\Fart_Mixer\Random_Farts\Whoopie_Cushion_02		189380
+	433190191	Pop_05	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Pop_1_31C1B30F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Pop_Sounds\Pop_Mixer\Random_Pop\Pop_05		37736
+	448107080	Distressed_Duck_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Duck_F1F8B68A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Duck_Sounds\Duck_Mixer\Duck_Swapper\Random_Distressed_Duck\Distressed_Duck_01		126444
+	475858338	LevelSelect_04	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_865A141E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect_04		1975424
+	535478819	Final_Duck	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Duck_B930BE7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Duck_Sounds\Duck_Mixer\Duck_Swapper\Random_Duck\Final_Duck		215600
+	541576894	LevelSelect_05	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_E9DE3C47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect_05		1491668
+	557171220	Distressed_Duck_02	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Duck_A64ED054.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Duck_Sounds\Duck_Mixer\Duck_Swapper\Random_Distressed_Duck\Distressed_Duck_02		152768
+	582665999	Fire_Sound	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Torch_Sound_4095FAC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Campfire_Sounds\Fire_Mixer\Fire_Sound		18676396
+	611523237	Tannoy_On	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Tannoy_On_F67EAF35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Tannoy_Sounds\Tannoy_Mixer\Tannoy_On		618840
+	621108632	Final_Balloon_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Balloon_9F313858.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Balloon_Sounds\Balloon_Mixer\Random_Balloon\Final_Balloon_01		98344
+	625068106	Final_Balloon	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Balloon_4529493B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Balloon_Sounds\Balloon_Mixer\Random_Balloon\Final_Balloon		96296
+	679182436	Distressed_Duck	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Duck_87B11BD4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Duck_Sounds\Duck_Mixer\Duck_Swapper\Random_Distressed_Duck\Distressed_Duck		91036
+	702577398	Final_Bell_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Bell_68DE9FC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Target_Sounds\Random_Target\Final_Bell_01		65884
+	708509900	Whoopie_Cushion	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Whoopie_Cushion_3ED61A04.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Fart_Sounds\Fart_Mixer\Random_Farts\Whoopie_Cushion		189056
+	761285153	Final_Duck_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Duck_47825B6E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Duck_Sounds\Duck_Mixer\Duck_Swapper\Random_Duck\Final_Duck_01		394728
+	775379799	Pop_03	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Pop_1_7A284E54.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Pop_Sounds\Pop_Mixer\Random_Pop\Pop_03		34276
+	780053111	LevelSelect_03	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_1E5B41EF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect_03		1290104
+	786251286	Greeting_02	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Greeting1_3B53AAD5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Greetings\Random_Greeting\Greeting_02		1273756
+	823786604	LevelSelect_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_6FDBF619.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect_01		1370728
+	852745420	Whoopie_Cushion_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Whoopie_Cushion_968C0D37.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Fart_Sounds\Fart_Mixer\Random_Farts\Whoopie_Cushion_01		216412
+	853104443	Greeting_05	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Greeting2_1F461B21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Greetings\Random_Greeting\Greeting_05		1344840
+	890404976	Pop_06	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Pop_1_11DD023C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Pop_Sounds\Pop_Mixer\Random_Pop\Pop_06		37312
+	958240821	Final_Horns_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Horns_7388A049.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Honk_Sounds\Reverb_Honk\Honk_Mixer\Random_Honk\Final_Horns_01		96968
+	959953240	Final_Balloon_02	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Final_Balloon_FD1B64ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Balloon_Sounds\Balloon_Mixer\Random_Balloon\Final_Balloon_02		96296
+	962815951	LevelSelect_02	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_A85252A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect_02		1330416
+	1031512431	Pop_04	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Pop_1_53348049.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Pop_Sounds\Pop_Mixer\Random_Pop\Pop_04		30416
+	1035460381	Greeting_04	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Greeting1_791E20EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Greetings\Random_Greeting\Greeting_04		1292768
+	1071209063	Pop_01	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\Pop_1_A45A5AD2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_FX\Pop_Sounds\Pop_Mixer\Random_Pop\Pop_01		19044
+	1071653599	LevelSelect_07	C:\Users\Bluh1\OneDrive\Desktop\University Work\Placement\Projects\Good-Clown-Bad-Clown\GoodClownBadClown\GoodClownBadClown_WwiseProject\.cache\Mac\SFX\LevelSelect_0E1EBFC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voicelines\GoodClownLines\MainMenu\Instructions\Random_Level\LevelSelect_07		4071688
+

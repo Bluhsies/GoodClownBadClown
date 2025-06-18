@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2024-02-23T10:54:37Z</created>
+    <modified>2024-02-23T10:54:37Z</modified>
+    <revision>1.0</revision>
+  </asset>
+  <library_images>
+    <image id="Toilet-diffuse-tex" name="Toilet-diffuse-tex">
+      <init_from>ToiletHandleInc_res/Toilet_diffuse.png</init_from>
+    </image>
+    <image id="Toilet-emissive-tex" name="Toilet-emissive-tex">
+      <init_from>ToiletHandleInc_res/Toilet_emissive.png</init_from>
+    </image>
+    <image id="Handle-diffuse-tex" name="Handle-diffuse-tex">
+      <init_from>ToiletHandleInc_res/Handle_diffuse.png</init_from>
+    </image>
+    <image id="Handle-emissive-tex" name="Handle-emissive-tex">
+      <init_from>ToiletHandleInc_res/Handle_emissive.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Toilet-Effect">
+      <profile_COMMON>
+        <newparam sid="Toilet-diffuse-surface">
+          <surface type="2D">
+            <init_from>Toilet-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Toilet-emissive-surface">
+          <surface type="2D">
+            <init_from>Toilet-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Toilet-diffuse-sampler">
+          <sampler2D>
+            <source>Toilet-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Toilet-emissive-sampler">
+          <sampler2D>
+            <source>Toilet-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="Toilet-tex-bind" texture="Toilet-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="Toilet-tex-bind" texture="Toilet-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Handle-Effect">
+      <profile_COMMON>
+        <newparam sid="Handle-diffuse-surface">
+          <surface type="2D">
+            <init_from>Handle-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Handle-emissive-surface">
+          <surface type="2D">
+            <init_from>Handle-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Handle-diffuse-sampler">
+          <sampler2D>
+            <source>Handle-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Handle-emissive-sampler">
+          <sampler2D>
+            <source>Handle-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="Handle-tex-bind" texture="Handle-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="Handle-tex-bind" texture="Handle-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Toilet-Material">
+      <instance_effect url="#Toilet-Effect"/>
+    </material>
+    <material id="Handle-Material">
+      <instance_effect url="#Handle-Effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Toilet-Geom" name="Toilet-Geom">
+      <mesh>
+        <source id="Toilet-Pos">
+          <float_array count="312" id="Toilet-Pos-array">-2.0 -5.0 -1.0 -2.0 1.0 -1.0 -2.0 1.0 -3.0 -2.0 -5.0 -3.0 -2.0 -5.0 3.0 -2.0 -3.0 3.0 -2.0 -3.0 -1.0 -2.0 -5.0 -1.0 -2.0 -8.0 2.0 -2.0 -7.0 2.0 -2.0 -7.0 -2.0 -2.0 -8.0 -2.0 -1.0 -7.0 1.0 -1.0 -5.0 1.0 -1.0 -5.0 -1.0 -1.0 -7.0 -1.0 1.0 -7.0 -1.0 1.0 -5.0 -1.0 1.0 -5.0 1.0 1.0 -7.0 1.0 2.0 -5.0 -3.0 2.0 1.0 -3.0 2.0 1.0 -1.0 2.0 -5.0 -1.0 2.0 -5.0 -1.0 2.0 -3.0 -1.0 2.0 -3.0 3.0 2.0 -5.0 3.0 2.0 -8.0 -2.0 2.0 -7.0 -2.0 2.0 -7.0 2.0 2.0 -8.0 2.0 -2.0 -8.0 -2.0 2.0 -8.0 -2.0 2.0 -8.0 2.0 -2.0 -8.0 2.0 -2.0 -5.0 -3.0 2.0 -5.0 -3.0 2.0 -5.0 -1.0 -2.0 -5.0 -1.0 -2.0 -5.0 1.0 2.0 -5.0 1.0 2.0 -5.0 3.0 -2.0 -5.0 3.0 -2.0 -5.0 -1.0 -1.0 -5.0 -1.0 -1.0 -5.0 1.0 -2.0 -5.0 1.0 1.0 -5.0 -1.0 2.0 -5.0 -1.0 2.0 -5.0 1.0 1.0 -5.0 1.0 -2.0 -7.0 -1.0 2.0 -7.0 -1.0 2.0 -7.0 -2.0 -2.0 -7.0 -2.0 -2.0 -7.0 2.0 2.0 -7.0 2.0 2.0 -7.0 1.0 -2.0 -7.0 1.0 -2.0 -7.0 1.0 -1.0 -7.0 1.0 -1.0 -7.0 -1.0 -2.0 -7.0 -1.0 1.0 -7.0 1.0 2.0 -7.0 1.0 2.0 -7.0 -1.0 1.0 -7.0 -1.0 -2.0 -3.0 3.0 2.0 -3.0 3.0 2.0 -3.0 -1.0 -2.0 -3.0 -1.0 -2.0 1.0 -1.0 2.0 1.0 -1.0 2.0 1.0 -3.0 -2.0 1.0 -3.0 -2.0 1.0 -3.0 2.0 1.0 -3.0 2.0 -5.0 -3.0 -2.0 -5.0 -3.0 -2.0 -7.0 -2.0 2.0 -7.0 -2.0 2.0 -8.0 -2.0 -2.0 -8.0 -2.0 -1.0 -5.0 -1.0 1.0 -5.0 -1.0 1.0 -7.0 -1.0 -1.0 -7.0 -1.0 -2.0 -3.0 -1.0 2.0 -3.0 -1.0 2.0 1.0 -1.0 -2.0 1.0 -1.0 -1.0 -7.0 1.0 1.0 -7.0 1.0 1.0 -5.0 1.0 -1.0 -5.0 1.0 -2.0 -8.0 2.0 2.0 -8.0 2.0 2.0 -7.0 2.0 -2.0 -7.0 2.0 -2.0 -5.0 3.0 2.0 -5.0 3.0 2.0 -3.0 3.0 -2.0 -3.0 3.0 </float_array>
+          <technique_common>
+            <accessor count="104" source="#Toilet-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Toilet-UV">
+          <float_array count="208" id="Toilet-UV-array">0.3125 0.8125 0.3125 1.0 0.28125 1.0 0.28125 0.8125 0.140625 0.875 0.171875 0.875 0.171875 1.0 0.140625 1.0 0.0 0.875 0.015625 0.875 0.015625 1.0 0.0 1.0 0.140625 0.9375 0.171875 0.9375 0.171875 1.0 0.140625 1.0 0.203125 1.0 0.234375 1.0 0.234375 0.9375 0.203125 0.9375 0.28125 0.8125 0.28125 1.0 0.3125 1.0 0.3125 0.8125 0.140625 1.0 0.171875 1.0 0.171875 0.875 0.140625 0.875 0.0 1.0 0.015625 1.0 0.015625 0.875 0.0 0.875 0.046875 0.625 0.109375 0.625 0.109375 0.5 0.046875 0.5 0.140625 0.875 0.140625 1.0 0.171875 1.0 0.171875 0.875 0.140625 0.875 0.140625 1.0 0.171875 1.0 0.171875 0.875 0.0 1.0 0.015625 1.0 0.015625 0.9375 0.0 0.9375 0.0 1.0 0.015625 1.0 0.015625 0.9375 0.0 0.9375 0.015625 0.875 0.015625 1.0 0.0 1.0 0.0 0.875 0.015625 0.875 0.015625 1.0 0.0 1.0 0.0 0.875 0.0 0.9375 0.015625 0.9375 0.015625 1.0 0.0 1.0 0.0 0.9375 0.015625 0.9375 0.015625 1.0 0.0 1.0 0.046875 0.875 0.109375 0.875 0.109375 1.0 0.046875 1.0 0.171875 0.875 0.171875 1.0 0.140625 1.0 0.140625 0.875 0.140625 0.625 0.203125 0.625 0.203125 0.8125 0.140625 0.8125 0.015625 0.875 0.015625 1.0 0.0 1.0 0.0 0.875 0.140625 0.9375 0.171875 0.9375 0.171875 1.0 0.140625 1.0 0.046875 0.8125 0.109375 0.8125 0.109375 0.6875 0.046875 0.6875 0.140625 1.0 0.171875 1.0 0.171875 0.9375 0.140625 0.9375 0.0 0.875 0.0 1.0 0.015625 1.0 0.015625 0.875 0.140625 0.875 0.140625 1.0 0.171875 1.0 0.171875 0.875 </float_array>
+          <technique_common>
+            <accessor count="104" source="#Toilet-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Toilet-Normal">
+          <float_array count="18" id="Toilet-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#Toilet-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Toilet-Vertices">
+          <input semantic="POSITION" source="#Toilet-Pos"/>
+        </vertices>
+        <polylist count="26" material="Toilet-Material">
+          <input offset="0" semantic="VERTEX" source="#Toilet-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#Toilet-UV"/>
+          <input offset="2" semantic="NORMAL" source="#Toilet-Normal"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 0 5 5 0 6 6 0 7 7 0 8 8 0 9 9 0 10 10 0 11 11 0 12 12 0 13 13 0 14 14 0 15 15 0 16 16 1 17 17 1 18 18 1 19 19 1 20 20 1 21 21 1 22 22 1 23 23 1 24 24 1 25 25 1 26 26 1 27 27 1 28 28 1 29 29 1 30 30 1 31 31 1 32 32 2 33 33 2 34 34 2 35 35 2 36 36 2 37 37 2 38 38 2 39 39 2 40 40 2 41 41 2 42 42 2 43 43 2 44 44 2 45 45 2 46 46 2 47 47 2 48 48 2 49 49 2 50 50 2 51 51 2 52 52 3 53 53 3 54 54 3 55 55 3 56 56 3 57 57 3 58 58 3 59 59 3 60 60 3 61 61 3 62 62 3 63 63 3 64 64 3 65 65 3 66 66 3 67 67 3 68 68 3 69 69 3 70 70 3 71 71 3 72 72 3 73 73 3 74 74 3 75 75 3 76 76 4 77 77 4 78 78 4 79 79 4 80 80 4 81 81 4 82 82 4 83 83 4 84 84 4 85 85 4 86 86 4 87 87 4 88 88 5 89 89 5 90 90 5 91 91 5 92 92 5 93 93 5 94 94 5 95 95 5 96 96 5 97 97 5 98 98 5 99 99 5 100 100 5 101 101 5 102 102 5 103 103 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Handle-Geom" name="Handle-Geom">
+      <mesh>
+        <source id="Handle-Pos">
+          <float_array count="72" id="Handle-Pos-array">0.0 -8.0 0.0 0.0 -7.0 0.0 0.0 -7.0 -1.0 0.0 -8.0 -1.0 2.0 -8.0 -1.0 2.0 -7.0 -1.0 2.0 -7.0 0.0 2.0 -8.0 0.0 0.0 -8.0 -1.0 2.0 -8.0 -1.0 2.0 -8.0 0.0 0.0 -8.0 0.0 0.0 -7.0 0.0 2.0 -7.0 0.0 2.0 -7.0 -1.0 0.0 -7.0 -1.0 0.0 -7.0 -1.0 2.0 -7.0 -1.0 2.0 -8.0 -1.0 0.0 -8.0 -1.0 0.0 -8.0 0.0 2.0 -8.0 0.0 2.0 -7.0 0.0 0.0 -7.0 0.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#Handle-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Handle-UV">
+          <float_array count="48" id="Handle-UV-array">0.0 0.96875 0.03125 0.96875 0.03125 1.0 0.0 1.0 0.0 1.0 0.03125 1.0 0.03125 0.96875 0.0 0.96875 0.0 0.9375 0.0 1.0 0.03125 1.0 0.03125 0.9375 0.03125 0.9375 0.03125 1.0 0.0 1.0 0.0 0.9375 0.03125 0.9375 0.03125 1.0 0.0 1.0 0.0 0.9375 0.0 0.9375 0.0 1.0 0.03125 1.0 0.03125 0.9375 </float_array>
+          <technique_common>
+            <accessor count="24" source="#Handle-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Handle-Normal">
+          <float_array count="18" id="Handle-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#Handle-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Handle-Vertices">
+          <input semantic="POSITION" source="#Handle-Pos"/>
+        </vertices>
+        <polylist count="6" material="Handle-Material">
+          <input offset="0" semantic="VERTEX" source="#Handle-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#Handle-UV"/>
+          <input offset="2" semantic="NORMAL" source="#Handle-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_animations/>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="Root-global" name="Root-global" sid="Root-global">
+        <matrix sid="matrix">1.0 0.0 -8.742278E-8 0.0 0.0 1.0 0.0 0.0 -8.742278E-8 0.0 -1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+        <node id="Toilet-global" name="Toilet-global" sid="Toilet-global">
+          <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+          <node id="Toilet-local" name="Toilet-local" sid="Toilet-local">
+            <matrix sid="matrix">1.0 0.0 0.0 -8.0 0.0 1.0 0.0 8.0 0.0 0.0 1.0 -8.0 0.0 0.0 0.0 1.0 </matrix>
+            <instance_geometry url="#Toilet-Geom">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Toilet-Material" target="#Toilet-Material">
+                    <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="Toilet-tex-bind"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="Handle-global" name="Handle-global" sid="Handle-global">
+            <matrix sid="matrix">1.0 0.0 0.0 -1.9227295 0.0 1.0 0.0 7.068593 0.0 0.0 1.0 -0.7744298 0.0 0.0 0.0 1.0 </matrix>
+            <node id="Handle-local" name="Handle-local" sid="Handle-local">
+              <matrix sid="matrix">1.0 0.0 0.0 -8.0 0.0 1.0 0.0 8.0 0.0 0.0 1.0 -8.0 0.0 0.0 0.0 1.0 </matrix>
+              <instance_geometry url="#Handle-Geom">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="Handle-Material" target="#Handle-Material">
+                      <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="Handle-tex-bind"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>

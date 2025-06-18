@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}" SchemaVersion="110">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{76DF6151-435F-4CA4-BB5E-E9D9F39A4D9D}" WorkUnitID="{D28C824A-5F9F-4DD0-BEEB-AA30F3AA62C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Objects" ID="{D8E3544F-23D6-438B-BCE2-ACD822EB0FBD}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>768</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Target_Obj" ID="{03FA82A7-540A-457A-9CAF-7642BED79557}">
+									<ChildrenList>
+										<Bus Name="Target_Pre" ID="{3D494412-5D68-40A6-ADE4-956EC1602446}">
+											<ReferenceList>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Side_Scorers_Full" ID="{958B635E-6347-4D9A-B8BC-65EE292EBD15}" WorkUnitID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}"/>
+												</Reference>
+											</ReferenceList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Poop_Obj" ID="{E92FACCC-D812-4DB4-B756-14894425149E}">
+									<ChildrenList>
+										<Bus Name="Poop_Pre" ID="{EB5DD5FA-2E9D-423C-80EA-841A38307C66}">
+											<ReferenceList>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Side_Poops_Full" ID="{DDE313EC-D2FA-4702-B70C-2DA1A03AA501}" WorkUnitID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}"/>
+												</Reference>
+											</ReferenceList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Passthrough" ID="{D5532201-1CEE-4339-B847-368AB19D7280}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3840</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Pass_Duck" ID="{C72E4EA1-2926-465C-BED1-542DF82520F6}">
+									<ChildrenList>
+										<Bus Name="Pass_Duck_Low" ID="{57CD1E3B-9AA9-48EB-87BB-911EEB440F00}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="EQ_Duck_Low" ID="{73387228-F72B-4EC4-8BBF-DD28A6888C1F}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Bus Name="Pass_Duck_High" ID="{2376D9AF-E2BB-4DCA-A79E-4A536DA0AE9B}">
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="EQ_Duck_High" ID="{2B71D0AE-CBA9-4119-A3D3-D599F2CDFD9B}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+														</Reference>
+													</ReferenceList>
+												</Bus>
+											</ChildrenList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Pass_Fire" ID="{9F005A5A-60F4-4F1F-B343-E7C1BEFCC8C9}">
+									<ChildrenList>
+										<Bus Name="Pass_Fire_Low" ID="{540A5E07-5C4B-468F-9A4F-EBD25054EB67}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="EQ_Fire_Low" ID="{723EDEEC-B40B-452B-950C-C55D303C571D}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Bus Name="Pass_Fire_High" ID="{ACD1E2BE-2359-4200-AFE6-2456615587C0}">
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="EQ_Fire_High" ID="{74DB1B26-D9ED-4A7F-9905-01B56F727185}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+														</Reference>
+													</ReferenceList>
+												</Bus>
+											</ChildrenList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="SideChain" ID="{CD222BEE-D32E-4959-9862-16443112EC0D}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>16641</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Side_Scorers" ID="{23C5C443-802E-47AE-8C8B-0CDCD25297B1}">
+									<ChildrenList>
+										<AuxBus Name="Side_Scorers_Low" ID="{83BA9D7C-F05D-462A-9A2C-B27C2B5DD76F}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="EQ_Scorers_Low" ID="{898009E4-90E4-4CA5-A805-7E76A251CD34}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+												</Reference>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Meter (Custom)" ID="{F577F0A8-E890-405B-AE09-8FE6AD76DEDE}" ShortID="100100600" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">															<PluginData>
+	<GameParameter Name="RTPC_Scorers_Low" ID="{FB9C3571-A648-482B-8649-F16A1A15F548}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Side_Scorers_High" ID="{9FFDC2F9-AA07-44DD-B811-1A4442762323}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="EQ_Scorers_High" ID="{1104D07B-DFBF-4EEE-AA24-73CCA8745673}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+												</Reference>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Meter (Custom)" ID="{8CF8537A-3648-4FC7-9442-57B9CBEB0515}" ShortID="348674097" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">															<PluginData>
+	<GameParameter Name="RTPC_Scorers_High" ID="{40F519D4-D449-4BAD-A806-D76585B490A6}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Side_Scorers_Full" ID="{958B635E-6347-4D9A-B8BC-65EE292EBD15}">
+											<ReferenceList>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Meter (Custom)" ID="{F5EEDC70-13C7-4547-8A5D-D060FB984DDB}" ShortID="141461478" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">															<PluginData>
+	<GameParameter Name="RTPC_Scorers_Full" ID="{E62E18F3-6452-4D62-ABC5-98816D45556C}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Side_Scorers_Low" ID="{83BA9D7C-F05D-462A-9A2C-B27C2B5DD76F}" WorkUnitID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Side_Scorers_High" ID="{9FFDC2F9-AA07-44DD-B811-1A4442762323}" WorkUnitID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Side_Poops" ID="{47731ECD-A87E-4218-974C-5BCAEED1ABF1}">
+									<ChildrenList>
+										<AuxBus Name="Side_Poops_Low" ID="{6BEBC404-6F95-4FE2-A404-312A6E7B65FE}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="EQ_Poops_Low" ID="{6A213769-D880-4AA9-8665-489E21819B6B}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+												</Reference>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Meter (Custom)" ID="{D250B591-8DD3-4274-AF79-543B26F65277}" ShortID="108942284" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">															<PluginData>
+	<GameParameter Name="RTPC_Poop_Low" ID="{AE735169-41DD-4D8C-AB39-911D96836885}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Side_Poops_High" ID="{D4E043BA-33B0-412A-B02C-891496E8B855}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="EQ_Poops_High" ID="{B6BDA3FF-9231-4871-AA8F-08F5A30330F3}" WorkUnitID="{433E206C-EDEA-493C-BD8B-23865D25DB26}"/>
+												</Reference>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Meter (Custom)" ID="{2474AED0-C1C6-4CE7-920C-88E97168709A}" ShortID="557149884" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">															<PluginData>
+	<GameParameter Name="RTPC_Poop_High" ID="{3B562D07-4D2D-416D-8EB2-50C240FA1224}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Side_Poops_Full" ID="{DDE313EC-D2FA-4702-B70C-2DA1A03AA501}">
+											<ReferenceList>
+												<Reference Name="Effect3">
+													<Custom>
+														<Effect Name="Meter (Custom)" ID="{8BCCA286-4421-49E3-9E82-ABBA10A89447}" ShortID="813295313" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">															<PluginData>
+	<GameParameter Name="RTPC_Poop_Full" ID="{B686C4DF-516F-4A63-A195-0D30F4E608F6}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Side_Poops_Low" ID="{6BEBC404-6F95-4FE2-A404-312A6E7B65FE}" WorkUnitID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Side_Poops_High" ID="{D4E043BA-33B0-412A-B02C-891496E8B855}" WorkUnitID="{EA02AF33-48F2-4D6B-875D-BD72F3704AA2}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Reverb" ID="{DB0FFE7F-0243-43F5-8582-96AC09F88B95}">
+							<ChildrenList>
+								<AuxBus Name="Room_Bus" ID="{B9621D69-CF39-4287-B28B-272DD9034CAE}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{BC55F688-FDCA-48C2-A6D3-3F59F94D2246}" ShortID="238151103" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Ducking" ID="{F0A04CBF-5444-4C70-9EF5-FAA416C020D6}">
+							<ChildrenList>
+								<Bus Name="DD_Bus" ID="{3BC90895-753A-4245-8EEE-1A1C8FBFE4EA}">
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="ND_Bus" ID="{103B318C-E120-4F31-91A2-80BA32D5ABF2}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>0</FadeInTime>
+												<FadeOutTime>0</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="ND_Bus" ID="{103B318C-E120-4F31-91A2-80BA32D5ABF2}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Main" ID="{DAE51549-4530-4E74-8A93-DD128A9C536F}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3584</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

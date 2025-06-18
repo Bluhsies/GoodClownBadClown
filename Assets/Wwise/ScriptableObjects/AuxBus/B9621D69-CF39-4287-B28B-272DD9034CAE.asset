@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0125901c7ad00d4f8582217a3c57125, type: 3}
+  m_Name: B9621D69-CF39-4287-B28B-272DD9034CAE
+  m_EditorClassIdentifier: 
+  objectName: Room_Bus
+  id: 3923769827
+  guid: B9621D69-CF39-4287-B28B-272DD9034CAE

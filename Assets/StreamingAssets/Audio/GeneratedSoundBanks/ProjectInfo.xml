@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="GoodClownBadClown_WwiseProject" GUID="{15A68C09-9861-4898-B56D-77DADB7D6482}" Generator="2022.1.7.8290"/>
+	<CacheRoot>../../../../GoodClownBadClown_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Android" GUID="{4168D4DC-5DCC-40E4-9FE6-0EAD27C9C4C1}" BasePlatform="Android" BasePlatformGUID="{A2D401DE-B8B6-4FEB-8142-137C34D507CA}" Path="../../../../GoodClownBadClown_WwiseProject/GeneratedSoundBanks/Android"/>
+		<Platform Name="Mac" GUID="{B0EB87F4-3901-498C-9771-2A7C635B3F45}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../GoodClownBadClown_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{C014CF99-5219-49A6-9795-63E1298CF815}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../GoodClownBadClown_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{9006D9F3-92A6-4209-8EDE-ABA91A2E7E0F}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{18DCF3CC-B03A-C465-B6FA-E684B57532D2}</FileHash>
+</ProjectInfo>

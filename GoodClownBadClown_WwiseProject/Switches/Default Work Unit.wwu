@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DE57582E-F270-48DE-967D-13F024C68B15}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{DE57582E-F270-48DE-967D-13F024C68B15}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Quacks" ID="{EE590533-2B64-4675-98B1-5276735F5B93}">
+					<ChildrenList>
+						<Switch Name="Normal" ID="{8226E36F-D095-4F01-93D6-D6C2894201AB}"/>
+						<Switch Name="Stressed" ID="{4734BFF2-EC11-43DB-A37A-6EE9693016D9}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
